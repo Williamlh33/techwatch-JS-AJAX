@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta content-type="bonjour">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="/assets/images/favicon.png">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.6/dist/css/uikit.min.css"/>
+		<link rel="stylesheet" href="/assets/css/form.css">
+		<link rel="stylesheet" href="/assets/css/nav.css">
+		<link rel="stylesheet" href="/assets/css/variables.css">
+		
+
+
+		<title>
+			{% block title %}{% endblock %}
+		</title>
+
+		<link rel="stylesheet" href="/assets/css/style.css"> {% block stylesheet %}{% endblock %}
+		</head>
+
+		<body>
+			{% include 'Component/_nav.html.twig' %}
+			{% include 'Component/_login.html.twig' %}
+			{% include 'Component/_form_register.html.twig' %}
+			{% block content %}{% endblock %}
+			{% block javascript %}	
+			<script src="/assets/JS/script.js"></script>			
+				<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.6/dist/js/uikit.min.js"></script>
+			{% endblock %}
+		</body>
+	</html>

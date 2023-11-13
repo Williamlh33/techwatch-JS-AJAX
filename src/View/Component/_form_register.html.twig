@@ -1,0 +1,29 @@
+<section>
+<div id="modal-center-2" class="uk-flex-top" uk-modal>
+	<div class="uk-modal-dialog container  uk-modal-body uk-margin-auto-vertical ">
+	<button class="uk-modal-close-default" type="button" uk-close></button>
+		<h2>Inscription</h2>
+		<p class="form_instruction">Vérifier à bien avoir rentré tous les champs du formulaire</p>
+		<form action="" id="register-form" class="register-formu" method="POST">
+			<div class="uk-child-width-expand@s form_contact" uk-grid>
+				<input class="uk-input div2" type="text" placeholder="Prénom" name="firstname" id="errorsfirstname">				
+				<input class="uk-input div3" type="text" placeholder="Nom" name="lastname" id="errorslastname">
+			</div>
+			<input class="uk-input form_contact" type="text" placeholder= "Email" name="email" id="errorsemail">
+            <input class="uk-input form_contact" type="password" placeholder="Mot de passe" name="password" id="errorspasswordregister">
+			<div class="uk-child-width-expand@s form_contact" uk-grid>
+				<input class="uk-input div2" type="text" placeholder="Téléphone" name="phone_number" id="errorsphone">
+				<input class="uk-input div3" type="date" placeholder="Date de naissance" name="birthdate" id="errorbirthdate">
+			</div>
+            <input class="uk-input form_contact" type="text" placeholder="Pseudo" name="username" id="errorsusername">
+			<input class="uk-input form_contact" type="text" placeholder="Localisation" name="localisation" id="errorslocalisation">
+			<div class="uk-flex uk-flex-right">
+            
+            <p class="form_instruction">Si vous possédez déjà un compte, <a href="#modal-center-1" class="uk-link">connectez-vous</a> par ici.</p>
+			<input type="submit" class="button-1 form_contact button_contact register-submit" value="S'inscrire">
+                
+			</div>
+		</form>		
+	</div>
+</section>
+

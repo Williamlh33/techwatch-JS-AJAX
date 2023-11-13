@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+	<section>  
+		<h2>Connectez-vous</h2>
+		<form action="" id="login-form" class="form-input" method="POST">
+			<input class="uk-input form_contact message-error" type="text" placeholder="Identifiant" name="identifiant" >
+			<div class="uk-child-width-expand@s form_contact" uk-grid>
+				<input class="uk-input div2 message-error" type="password" placeholder="Mot de passe" name="password" >
+				<div class="uk-flex uk-flex-right uk-margin">
+					<input type="submit" class="button-1 form_contact button_contact login-submit">
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+{% endblock %}

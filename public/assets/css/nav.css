@@ -1,0 +1,19 @@
+.uk-navbar-container:not(.uk-navbar-transparent){
+    background-color: var(--dark-color);
+    display: flex;
+    flex-direction: row;
+    color: var(--primary-color);
+    
+    
+}
+.uk-navbar-nav>li>a {
+    color: var(--primary-color);
+}
+
+.uk-button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-size: var(--button-p-size);
+    border-radius: var(--border-radius-20);
+    box-shadow: 0px 5px 25px rgba(75, 190, 169, .3);
+}

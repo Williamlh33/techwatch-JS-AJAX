@@ -1,0 +1,171 @@
+section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;    
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    margin: auto;
+}
+
+.container {   
+    display: flex;
+    flex-direction: column;
+    
+    align-content: center;
+    background-color: var(--dark-color);
+    padding: 70px 90px 70px 90px;
+    border-radius: var(--border-radius-80);          
+}
+
+.uk-modal-close-default {
+    top: 2vh;
+    right: 2vw;
+    position: fixed;
+    color: var(--tertiary-color);
+    stroke-width: 20px;
+}
+
+.uk-link, .uk-link:hover, a {
+    color : var(--tertiary-color);
+}
+
+.uk-flex .uk-flex-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: var(--h2-size);
+    font-weight: 600;
+    margin-bottom: 0;
+    font-family: Poppins;
+}
+
+.form_instruction {
+    color: var(--light-color);
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: var(--p-size-desktop);
+    text-align: left;    
+}
+
+.form_contact {
+    margin-top: 1.5rem;
+}
+
+.div2 { 
+    padding-left: 10px;    
+}
+
+.uk-grid {
+    margin-left: 0;
+    gap: 30px;
+}
+
+.uk-textarea {
+    max-width: 100%;
+    height: 125%;
+    resize: none;
+    border-radius: var(--border-radius-20);
+    border: 0.25rem solid;
+    border-color: var(--primary-color);    
+}
+
+.uk-textarea:focus {
+    max-width: 100%;
+    height: 125%;
+    resize: none;
+    border-radius: var(--border-radius-20);
+    border: 0.25rem solid;
+    border-color: var(--secondary-color);    
+}
+
+.button_contact {
+    font-family: Poppins;
+    font-size: var(--button-p-size);
+    font-weight: 600;
+    width: 40%;
+}
+
+.uk-input {
+    border-radius: var(--border-radius-20);
+    border: 0.25rem solid;
+    border-color: var(--primary-color);  
+    padding: 10px;  
+}
+
+.uk-input:focus {
+    border-radius: var(--border-radius-20);
+    border: 0.25rem solid;
+    border-color: var(--secondary-color);    
+}
+
+.uk-modal-close-default {
+    margin-right: 1vw;
+    margin-top: 2vh;
+}
+
+.uk-modal-close-default line {
+    stroke-width: 0.15rem;
+    stroke: var(--tertiary-color);
+}
+
+.uk-modal-close-default svg {
+    width: 25px;
+    height: 25px;
+}
+
+.uk-modal-close-default line::selection {
+    stroke: red;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .uk-grid {
+    margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 650px)
+{
+    textarea {
+        max-width: 50%;
+        height: 30%;
+        resize: none;
+    }
+    .uk-grid {
+        margin-left: 0;
+        gap: 0;
+    }
+
+    section {
+        margin-top: 2vh;
+    }
+
+    .form_contact {
+        margin-top: 1rem;
+        
+    }
+
+    .container {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-left: 0;
+        
+        background-color: var(--dark-color);
+        padding: 70px 90px 70px 90px;
+        border-radius: var(--border-radius-80);          
+    }
+}
+
+
+    

@@ -1,0 +1,123 @@
+:root {
+    /* Couleurs */
+    --light-color: #FAFAFA;
+    --dark-color: #003D32 !important;
+    --primary-color: #4CBFAA;
+    --secondary-color: #F1AB91;
+    --tertiary-color: #F05A56;
+    --p-color: #121212;
+    --p-color-muted: #8D8D8D;
+    --h-color: #003D32;
+    /* Titres et texte */
+    --h1-size: 4.5rem;
+    --h2-size: 3.75rem;
+    --h3-size: 3rem;
+    --h4-size: 2.25rem;
+    --h5-size: 1.5rem;
+    --button-p-size: 1.75rem;
+    --p-size-desktop: 1rem;
+    --p-size-mobile: 0.85rem;
+    --font-project: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji",
+     "Segoe UI Symbol", "Noto Color Emoji";
+    /* Effets */
+    --border-radius-20: 0rem 1.25rem 0rem 1.25rem;
+    --border-radius-40: 0rem 2.5rem 0rem 2.5rem;
+    --border-radius-80: 0rem 5rem 0rem 5rem;
+}
+
+body {
+    background-color: var(--light-color);
+    min-height: 100vh;
+    font-family: Poppins;
+}
+
+p {
+    color: var(--p-color);
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: var(--p-size-desktop);
+    text-align: left;
+}
+
+p .italic {
+    color: var(--p-color);
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: var(--p-size-desktop);
+    text-align: left;
+    font-style: italic;
+}
+
+p>a {
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: var(--p-size-desktop);
+    text-align: left;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* Boutons */
+
+.button-1 {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-size: var(--button-p-size);
+    border-radius: var(--border-radius-20);
+    box-shadow: 0px 5px 25px rgba(75, 190, 169, .3);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border: 0;
+}
+
+.button-1:hover {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    font-size: var(--button-p-size);
+    border-radius: var(--border-radius-20);
+    box-shadow: 0px 5px 25px rgba(241, 171, 145, .3);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border: 0;
+}
+
+/* Form */
+
+.form-input .uk-input .uk-search-input::placeholder {
+    color: var(--tertiary-color);
+}
+
+.uk-notification-message-success {
+    background-color: var(--primary-color);
+    font-family: var(--font-project);
+    font-weight: 500;
+    font-size: var(--h5-size);
+    font-style: italic;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    border-radius: var(--border-radius-20);
+    box-shadow: 0px 5px 25px rgba(75, 190, 169, .6);
+    color: white;
+    top: 2vh;
+    right: 2vw;
+    text-align: center;
+}
+
+.uk-notification-message-warning {
+    background-color: var(--tertiary-color);
+    font-family: var(--font-project);
+    font-weight: 500;
+    font-size: var(--h5-size);
+    font-style: italic;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    border-radius: var(--border-radius-20);
+    box-shadow: 0px 5px 25px rgba(240, 91, 86, 0.6);
+    color: white;
+    top: 2vh;
+    right: 2vw;
+    text-align: center;
+}
